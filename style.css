@@ -11,6 +11,40 @@ body{
     justify-content: center;
 }
 
+.rotate{
+    animation: rotate 10s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+.rotater{
+    rotate: 15deg;
+    animation: rotater 10s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+@keyframes rotate {
+    0%{
+        rotate:0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@keyframes rotater {
+    0%{
+        rotate:0deg;
+    }
+    50%{
+        rotate: -180deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+}
+.container-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .container{
     background-color:whitesmoke;
     border-radius: 2rem;
@@ -21,19 +55,40 @@ body{
     max-width: 250px;
     width: 100%;
     gap:1rem;
+    overflow:hidden;
 }
 .container h1{
     text-align: center;
 }
 .container figure{
-    border-radius: 100%;
+    border-radius: 4px;
     aspect-ratio: 1/1;
-    overflow: hidden;
     width: 100%;
 }
+@keyframes bounce {
+    0%{
+        scale: 1 1;
+    }
+    25%{
+        scale: 0.98 1.02;
+    }
+    50%{
+        scale: 1 1;
+    }
+    75%{
+        scale: 1.02 0.98;
+    }
+    100%{
+        scale: 1 1;
+    }
+}
 .container figure img{
+    transform-origin: 50% 100%;
     width: 100%;
+    animation: bounce 1s linear infinite;
     height: 100%;
+    border-radius: 25%;
+    box-shadow: 0 0 5px black;
 }
 .link{
     background: linear-gradient(135deg, crimson,#930f29);
