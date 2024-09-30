@@ -1,0 +1,25 @@
+*{
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(crimson,#930f29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color:whitesmoke;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+}
+.container figure{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    width: ;
+}
