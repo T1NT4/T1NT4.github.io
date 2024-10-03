@@ -52,18 +52,35 @@ body{
     flex-direction: column;
     padding: 20px;
     box-shadow: 0 0 20px black;
-    max-width: 250px;
-    width: 100%;
-    gap:1rem;
+    max-width: 220px;
+    width: 220px;
+    gap:52px;
     overflow:hidden;
 }
 .container h1{
     text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: white 0 0 6px;
 }
 .container figure{
     border-radius: 4px;
     aspect-ratio: 1/1;
     width: 100%;
+}
+.link-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 @keyframes bounce {
     0%{
